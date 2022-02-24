@@ -7,7 +7,11 @@ function borkfuscator(inputText) {
 
 	for (let i = 0; i < splitInput.length; i++) {
 		if (unborked.includes(splitInput[i])) {
-			borkBuffer += splitInput[i] + " ";
+			borkBuffer += splitInput[i];
+			borked = false;
+		}
+		else if (splitInput[i] == " ") {
+			borkBuffer += splitInput[i];
 			borked = false;
 		}
 		else {
