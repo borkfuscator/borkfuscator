@@ -3,7 +3,7 @@ function borkfuscator(inputText) {
 	let borkBuffer = "";
 	let borked = false;
 
-	const unborked = [".", "?", "!", ","];
+	const unborked = "~!@#$%^&*()_+`-={}[]|\\;:'\",./<>?".split("");
 
 	for (let i = 0; i < splitInput.length; i++) {
 		if (unborked.includes(splitInput[i])) {
