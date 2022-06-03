@@ -1,4 +1,5 @@
-function borkfuscator(inputText) {
+function borkfuscator(inputText, word) {
+	const _word = typeof word != "undefined" ? word : "bork";
 	const splitInput = inputText.split("");
 	let borkBuffer = "";
 	let borked = false;
@@ -19,7 +20,7 @@ function borkfuscator(inputText) {
 				continue;
 			}
 
-			borkBuffer += "bork";
+			borkBuffer += _word;
 			borked = true;
 		}
 	}
