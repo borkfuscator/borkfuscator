@@ -1,6 +1,6 @@
 {
   "name": "borkfuscator",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Borkify your messages!",
   "main": "index.js",
   "scripts": {

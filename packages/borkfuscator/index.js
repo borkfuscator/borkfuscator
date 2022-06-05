@@ -15,7 +15,7 @@ function borkfuscator(inputText, word) {
 			borkBuffer += splitInput[i];
 			borked = false;
 		}
-		else if (splitInput.length > i + 2 && (splitInput[i].toLowerCase() == "t" && splitInput[i + 1].toLowerCase() == "h" && splitInput[i + 2].toLowerCase() == "e")) {
+		else if (splitInput.length > i + 3 && (splitInput[i].toLowerCase() == "t" && splitInput[i + 1].toLowerCase() == "h" && splitInput[i + 2].toLowerCase() == "e" && splitInput[i + 3].toLowerCase() == " ")) {
 			borkBuffer += "the";
 			i += 2;
 			borked = false;
